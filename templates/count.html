@@ -1,0 +1,13 @@
+<h1><center>The total length of the words typed is {{length}}</<h1>
+  <br/>
+<a href="{% url 'home' %}"> type another word </a>
+
+<h3><i>Your words</i></h3><h6>
+{% for a,b in worddictionary%}
+
+{{a}}-{{b}}<br/>
+{%endfor%}
+
+
+</h6>
+</center>
